@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Item } from './item';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const nombres = [
+    'Juan',
+    'Pedro',
+    'Mario'
+];
+
+export const App = () => {
+    return(
+        <div>
+            <p>Hola mundo react</p>
+            <ul>
+                {
+                    nombres.map( el => <Item label={ el } />)
+                }
+            </ul>
+        </div>
+    )
 }
-
-export default App;
