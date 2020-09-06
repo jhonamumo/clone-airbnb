@@ -37,7 +37,7 @@ const posts = [
     {
         id: 5,
         image: 'https://img.freepik.com/foto-gratis/hermosa-playa-tropical-mar-palmera-coco-isla-paradisiaca_74190-2206.jpg',
-        Title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, odio. Inventore corporis mollitia ipsam temporibus earum nostrum, vel, recusandae est eaque quia culpa quidem facilis vitae ipsa dolorum eligendi. Hic!",
+        Title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae est eaque quia culpa quidem facilis vitae ipsa dolorum eligendi. Hic!",
         price: '$ 33 evenings',
         score: 5,
         vote: "37",
