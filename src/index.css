@@ -34,6 +34,10 @@ body {
   overflow-x: auto;
 }
 
+.ranking a {
+  text-decoration: none;
+}
+
 .ranking article {
   height: 230px;
   margin: 0 10px;
@@ -91,12 +95,65 @@ body {
   color: #fff;
   font-size: 1.1em;
   opacity: 0.9;
+  outline: none;
 }
 
 .button:hover {
   opacity: 1;
   cursor: pointer;
 }
+
+.housing {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  box-shadow: 1px 2px 2px #ccc;
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.housing img {
+  width: 200px;
+}
+
+.housing div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.housing h3 {
+  margin: 0px;
+  font-weight: 300;
+}
+
+.housing h6 {
+  margin: 0px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score div {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+
+.score p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.score div i {
+  color: #00A699;
+}
+
+/***
 
 .link {
   text-decoration: none;
@@ -163,3 +220,4 @@ body {
   color: #484848;
   padding-left: 10px;
 }
+***/
