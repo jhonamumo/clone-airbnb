@@ -31,6 +31,7 @@ export const BookingPage = () => {
         try {
             const response = await requestHttp('post', '/booking/reserve', body);
             console.log(response);
+            alert(response);
         } catch (error) {
             console.error(error);
         }
