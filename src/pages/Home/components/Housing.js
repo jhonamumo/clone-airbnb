@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Score } from '../../../components/Score'
 
-export const Housing = ({ id, score, users, description, image, place }) => (
-    <Link className="housing" to={ `/detail/${id}` }>
+export const Housing = ({ _id, score, users, description, image, place }) => (
+    <Link className="housing" to={ `/detail/${_id}` }>
         <img src={image} />
         <div>
             <h3>{description}</h3>

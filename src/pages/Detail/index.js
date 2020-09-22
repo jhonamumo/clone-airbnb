@@ -27,7 +27,7 @@ export const DetailPage = () => {
         try {
             const response = await requestHttp('get', `/experiences/detail/${id}`);
             const { detail } = response;
-            setDetail(response.experiences);
+            setDetail(response.experience);
         } catch (error) {
             console.error('error', error);
         }
@@ -35,7 +35,7 @@ export const DetailPage = () => {
 
     return (
         <FramePage>
-            <Title label={detail.title} />
+            <Title label={detail.place} />
             <CardDetail { ...detail } />
             <Button isLink={true} linkTo={`/booking/${id}`} style={buttonStyle} label="Reserva ahora!" type="Submit" />
         </FramePage>

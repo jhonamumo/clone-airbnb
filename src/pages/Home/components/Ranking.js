@@ -24,7 +24,7 @@ export const Ranking = () => {
     return (
         <section className="ranking">
             {
-                booking.map(el => <Card key={el.id} { ...el } />)
+                booking.map(el => <Card key={el._id} { ...el } />)
             } 
             {
                 //posts.map((el, i) => <Card key={i} id={ el.id } image={el.image} description={el.description} place={el.place} />)

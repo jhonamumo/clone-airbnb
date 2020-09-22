@@ -23,7 +23,7 @@ export const Experiences = () => {
     return (
         <section className="experiences" >
             {
-                experiences.map( el => <Housing key={ el.id } { ...el } /> )
+                experiences.map( el => <Housing key={ el._id } { ...el } /> )
             }
         </section>
     )

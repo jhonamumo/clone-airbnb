@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { Button } from '../../components/Button'
+import { requestHttp } from '../../config/HttpRequest'
 import { FramePage } from './../FramePage'
 
 export const BookingPage = () => {
@@ -17,16 +18,22 @@ export const BookingPage = () => {
         requestBooking();
     }
 
-    const requestBooking = () => {
+    const requestBooking = async () => {
+
         const body = {
-            id,
+            experience_id: id,
             name, //name: name
             phone,
             email,
-            bookingDate,
+            booking_date: bookingDate,
         }
 
-        console.log('body', body);
+        try {
+            const response = await requestHttp('post', '/booking/reserve', body);
+            console.log(response);
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     useEffect( () => {
